@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Boostrap 01</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-4_6.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+                <div class="container">
+                    <a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#sobre-nos" class="nav-link">Sobre Nós</a></li>
+                            <li class="nav-item"><a href="#nossos-projetos" class="nav-link">Nossos Projetos</a></li>
+                            <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                            <li class="nav-item"><a href="#institucional" class="nav-link">Vídeo</a></li>
+                            <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero d-flex align-items-center">
+                <div class="container">
+                    <div class="hero__chamada py-3 px-3">
+                        <h1 class="text-white hero__titulo">TopCasaFina Arquitetura</h1>
+                        <p class="text-white hero__subtitulo">Projetando a casa dos sonhos desde 2000 A.C</p>
+                        <button class="btn btn-primary btn-lg"> Contate-nos agora</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-5">
+            <section class="sobre_nos container-fluid" id="sobre-nos">
+                <div class="row pb-4">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-sm-6 mb-3">
+                                <h2 class="sobre_nos__titulo">Sobre Nós</h2>
+                                <img src="./assets/img/empresa.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="accordion" id="accordion-sobre">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title mb-0" data-toggle="collapse" data-target="#paragrafo-1">Desde 1935</h4>
+                                        </div>
+                                        <div class="collapse" id="paragrafo-1" data-parent="#accordion-sobre">
+                                            <div class="card-body">
+                                                <p class="card-text">A TopCasa Fina Arquitetura está no mercado desde... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title mb-0" data-toggle="collapse" data-target="#paragrafo-2">Desde 1935</h4>
+                                        </div>
+                                        <div class="collapse" id="paragrafo-2" data-parent="#accordion-sobre">
+                                            <div class="card-body">
+                                                <p class="card-text">A TopCasa Fina Arquitetura está no mercado desde... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title mb-0" data-toggle="collapse" data-target="#paragrafo-3">Desde 1935</h4>
+                                        </div>
+                                        <div class="collapse" id="paragrafo-3" data-parent="#accordion-sobre">
+                                            <div class="card-body">
+                                                <p class="card-text">A TopCasa Fina Arquitetura está no mercado desde... </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <article class="container-fluid py-4 jumbotron">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h3 class="projetos__titulo mb-2">Mais de 300 prêmios em desgin e conforto!</h3>
+                                <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <section class="projetos container-fluid" id="nossos-projetos">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="projetos__titulo mb-3">Nossos Projetos</h2>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/casa-castelo.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Casa Castelo</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/casa-lago.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Casa Lago</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/mercado-marapira.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Mercado Marapira</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/palacio-dionisio.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Palácio Dionísio</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/residencia-ludi.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Residencia Ludi</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/palacio-dionisio.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Palácio Dionísio</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/residencia-ludi.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Residencia Ludi</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 projeto">
+                                <figure class="img-thumbnail">
+                                    <img src="./assets/img/projetos/casa-castelo.png" alt="" class="img-fluid">
+                                    <figcaption class="px-2 py-2">
+                                        <h5 class="projeto__nome">Casa Castelo</h5>
+                                        <p class="projeto__descricao mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nemo.</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="depoimentos container-fluid pt-4" id="depoimentos">
+                <div class="row">
+                    <div class="container">
+                        <div class="row pb-3">
+                            <div class="col-12 depoimentos__titulo">
+                                <h2>Depoimentos</h2>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="depoimentos__carosel carousel slide" data-ride="carousel" id="depoimentos__carosel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#depoimentos__carosel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#depoimentos__carosel" data-slide-to="1"></li>
+                                        <li data-target="#depoimentos__carosel" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <figure class="carosel__slide carousel-item active">
+                                            <img src="./assets/img/depoimentos/projetos0.png" alt="" class="d-block w-100">
+                                            <figcaption class="carousel-caption">
+                                                <h5 class="slide__nome">Nome Pessoa</h5>
+                                                <p class="slide__comentario mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="carosel__slide carousel-item">
+                                            <img src="./assets/img/depoimentos/projetos1.png" alt="" class="d-block w-100">
+                                            <figcaption class="carousel-caption">
+                                                <h5 class="slide__nome">Nome Pessoa</h5>
+                                                <p class="slide__comentario mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </figcaption>
+                                        </figure>
+                                        <figure class="carosel__slide carousel-item">
+                                            <img src="./assets/img/depoimentos/projetos2.png" alt="" class="d-block w-100">
+                                            <figcaption class="carousel-caption">
+                                                <h5 class="slide__nome">Nome Pessoa</h5>
+                                                <p class="slide__comentario mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-target="#depoimentos__carosel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-target="#depoimentos__carosel" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="institucional container-fluid pt-4" id="institucional">
+                <div class="row">
+                    <div class="container">
+                        <div class="row pb-3">
+                            <div class="col-12">
+                                <h2 class="institucional__titulo">Vídeo Institucional</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="institucional__video embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/x_LNZ5pzulg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contato container-fluid pt-4" id="contato">
+                <div class="row">
+                    <div class="container">
+                        <div class="row pb-3">
+                            <div class="col-12 text-center">
+                                <h2 class="contato__titulo">Contato</h2>
+                                <p class="contato__subtitulo mb-0">Entre em contato conosco</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pb-4">
+                            <div class="col-md-6">
+                                <form class="" action="" method="post">
+                                    <div class="form-group">
+                                        <label for="nome">Nome:</label>
+                                        <input type="text" class="form-control" id="nome">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">@</div>
+                                            </div>
+                                            <input type="text" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-row align-items-center">
+                                        <div class="form-group col-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="tipoPessoa" id="fisica" value="option1" checked>
+                                                <label class="form-check-label" for="fisica">
+                                                    Pessoa Física
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="tipoPessoa" id="juridica" value="option2">
+                                                <label class="form-check-label" for="juridica">
+                                                    Pessoa Jurídica
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <label for="solicitacao">Tipo de solicitacao</label>
+                                            <select id="solicitacao" class="form-control">
+                                                <option selected disabled>Escolha uma opção</option>
+                                                <option>Casa</option>
+                                                <option>Apartamento</option>
+                                                <option>Mansão</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-block btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container-fluid footer py-4">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <address>
+                                <strong>TopCasaFina Arquitetura</strong><br>
+                                Rua Vergueiro, 3185, Vila Mariana<br>
+                                São Paulo, SP<br>
+                                Tel: (11) 5571-2751 ou 5083-3884
+                            </address>
+                            <address class="mb-0">
+                                Email: contato.topcasafina@alura.com.br
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap-4_6.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anos de Copa do Mundo</title>
+</head>
+<body>
+    
+    <script>
+        function pulaLinha() {
+            document.write("<br/><br/>")
+        }
+
+        function mostraTexto(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var anoCopa = 1930;
+        var anoAtual = 2022;
+
+        // Enquanto for verdadeiro com condição final, vai funcionar, caso não tenha condição final, ficará carregando eternamente
+        mostraTexto(`Usando WHILE`);
+        while (anoCopa <= anoAtual) {
+            mostraTexto(`Tivemos Copa em ${anoCopa}`);
+            anoCopa = anoCopa + 4;
+        }
+
+        mostraTexto(`Usando FOR`);
+        for (var anoCopa = 1930; anoCopa < anoAtual; anoCopa+=4) {
+            mostraTexto(`Tivemos Copa em ${anoCopa}`);
+            
+        }
+     
+
+    </script>
+</body>
+
+</html>

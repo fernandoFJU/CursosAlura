@@ -1,0 +1,25 @@
+.input {
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--cinza);
+    background-color: var(--branco);
+    padding: 1rem;
+    box-shadow: 10px 10px 30px rgba(0,0,0,.1);
+    outline: none;
+    margin-bottom: 1rem;
+    border: none;
+}
+.input::placeholder{
+    color: rgba(50, 50, 50, 0.3);
+}
+.input--icone{
+    padding-left: calc(1rem * 3);
+    background-repeat: no-repeat;
+    background-position: left 1rem center;
+}
+.input--email{
+    background-image: url("../../img/icones/mail.svg");
+}
+.input--block{
+    width: 100%;
+}

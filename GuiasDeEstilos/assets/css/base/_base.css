@@ -1,0 +1,7 @@
+body{
+    background-image: url("../../img/fundo-textura.png"), url("../../img/fundo-linhas.png");
+    background-position: center;
+    font-family: var(--familia-corpo);
+    font-size: var(--tamanho-corpo);
+    color: var(--cinza);
+}

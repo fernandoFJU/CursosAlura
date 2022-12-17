@@ -1,0 +1,36 @@
+.populares__card {
+    box-shadow: 4px 4px 18px rgba(0,0,0,.1);
+    background-color: var(--branco);
+    display: grid;
+    grid-template-areas: "card-imagem" "card-corpo";
+    grid-template-rows: 173px auto;
+    grid-template-columns: 100%;
+}
+.populares__card:last-child {
+    margin-right: 0;
+}
+.populares__card___imagem{
+    max-width: 100%;
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+.populares__card___corpo{
+    grid-area: card-corpo;
+    padding: .75rem;
+    display: grid;
+    grid-template-areas: "card-cabecalho" "card-conteudo";
+    grid-row-gap: 10px;
+    /* grid-template-rows: 50px auto; */
+    grid-template-rows: auto auto;
+}
+
+.populares__card___titulo{
+    font-size: 2rem;
+}
+.populares__card___data{
+    font-size: .75rem;
+    font-weight: var(--peso-corpo);
+    color: #777777;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,23 @@
+.titulo{
+    font-size: var(--tamanho-titulo);
+}
+.titulo--destaque{
+    font-family: var(--familia-titulo-destaque);
+    color: var(--preto);
+    font-size: var(--tamanho-titulo-destaque);
+    font-weight: var(--peso-titulo-destaque);
+    display: block;
+    margin: .75rem 0;
+}
+.texto{
+    line-height: 1.25rem;
+}
+.texto--esquerda{
+    text-align: left !important;
+}
+.texto--centralizado{
+    text-align: center !important;
+}
+.texto--direita{
+    text-align: right !important;
+}

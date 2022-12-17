@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo Adivinhação</title>
+</head>
+<body>
+
+    <input type="text">
+    <button>Verificar</button>
+    
+    <script>
+        function sorteia() {
+            return Math.round(Math.random() * 10);
+        }
+
+        function sorteiaNumeros(quantidade) {
+
+            var segredos = [];
+
+            var numero = 1;
+            while(numero <= quantidade){
+
+                var numeroAleatorio = sorteia();
+
+                if (numeroAleatorio !== 0) {
+                    var achou = false;
+
+                    for(posicao = 0; posicao < segredos.length; posicao++){
+                        if(segredos[posicao] == numeroAleatorio){
+                            achou = true;
+                            break;
+                        }
+                    }
+
+                    if(achou == false){
+                        segredos.push(numeroAleatorio);
+                        numero++;
+                    }
+                }
+                
+            }          
+
+            return segredos;
+        }
+
+        var segredos = sorteiaNumeros(5);
+
+        console.log(segredos);
+
+        var input = document.querySelector("input");
+        var botao = document.querySelector("button");
+
+        input.focus();
+
+        function verifica() {
+
+            var acertou = false;
+            for(posicao = 0; posicao < segredos.length; posicao++){
+                if (input.value == segredos[posicao]) {
+                    alert(`Uau! Você acertou, pois eu pensei no ${segredos[posicao]}`);
+                    acertou = true;
+                    break;
+                }
+            }
+
+            if(!acertou){
+                alert(`Você Errou!!! :(`);
+            }    
+
+            input.value = "";
+            input.focus();
+        }
+
+        botao.onclick = verifica;
+        
+        
+
+
+        /*var totalChance = 3;
+
+        var tentativas = 1;
+        while (tentativas <= totalChance){
+
+            var chute = parseInt(prompt(`Já pensei num número. Qual você acha que é?`));
+
+            if (chute == numeroPensado) {
+                mostraTexto(`Uau! Você acertou, pois eu pensei no ${numeroPensado}`);
+                break;
+            } else {
+                mostraTexto(`Você Errou!!! :(`);
+            }
+
+            tentativas++;
+        }*/
+
+        
+
+        
+    </script>
+</body>
+
+</html>

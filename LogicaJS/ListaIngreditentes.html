@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de Ingredientes</title>
+    <link rel="stylesheet" href="assets/css/ingredientes.css">
+</head>
+<body>
+
+    <div class="cadastro">
+        <input type="text" id="inputIngrediente" required>
+        <button id="btnAdicionar">Adicionar</button>
+    </div>
+
+    <div class="ingredientes">
+        <h3>Ingredientes Cadastrados</h3>
+        <ul class="lista-ingredientes">
+        </ul>
+    </div>
+   
+    <script>
+        function criarElemento(valor) {
+
+            var li_Ingrediente = document.createElement("li");
+            li_Ingrediente.classList.add("ingrediente");
+            li_Ingrediente.innerText = valor.value;
+
+            var li_Ingrediente_span = document.createElement("span");
+            li_Ingrediente_span.classList.add("excluir-ingrediente");
+            li_Ingrediente_span.innerText = "x";
+            li_Ingrediente_span.setAttribute("onClick", "apagarElemento(this.parentElement)");
+            li_Ingrediente.appendChild(li_Ingrediente_span);
+
+            return li_Ingrediente;
+        }
+
+        function apagarElemento(el) {
+
+            var elemento = el;
+            elemento.remove();
+        }
+
+        var ingredientes = [];
+
+        var input_ingrediente = document.querySelector("#inputIngrediente");
+        var btn_adicionar = document.querySelector("#btnAdicionar");
+        var lista_ingrediente = document.querySelector(".lista-ingredientes");
+        var excluir_ingrediente = document.querySelector(".excluir-ingrediente");
+
+        input_ingrediente.focus();
+
+        btn_adicionar.addEventListener("click", function () {
+
+            if(input_ingrediente.value !== ""){
+
+                ingredientes.push(input_ingrediente.value);
+
+                var item_ingrediente = criarElemento(input_ingrediente);
+
+                lista_ingrediente.appendChild(item_ingrediente);
+
+                console.log(ingredientes);
+
+                input_ingrediente.value = "";
+                input_ingrediente.focus();
+            }else{
+                alert("Digite um Ingrediente");
+            }
+            
+        });
+        
+
+        
+    </script>
+</body>
+
+</html>

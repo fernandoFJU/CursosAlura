@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <script>
+        // Difernça entre VAR, LET e CONST:
+
+        /* As declarações de VAR tem escopo global ou de função, enquanto as declarações de LET e de CONST têm escopo de bloco.
+
+        Variáveis de VAR podem ser atualizadas e declaradas novamente dentro de seu escopo. As variáveis de LET podem ser atualizadas, mas não podem ser declaradas novamente. As variáveis de CONST não podem ser atualizadas nem declaradas novamente.
+
+        Todas elas passam por hoisting para o topo de seu escopo. Porém, enquanto variáveis com VAR são inicializadas com undefined, as variáveis com LET e CONST não são inicializadas.
+
+        Enquanto VAL e LET podem ser declaradas sem ser inicializadas, CONST precisa da inicialização durante a declaração.*/
+
+        var tanque = 40;
+        var caminhoComGasolina = 480;
+        var consumoDeGasolina = caminhoComGasolina / tanque;
+        var caminhoComAlcool = 300;
+        var consumoDeAlcool = caminhoComAlcool / tanque;;
+
+        document.write(`O consumo de Gasolina é: ${consumoDeGasolina}Km/l <br>`);
+        document.write(`O consumo de Alcool é: ${consumoDeAlcool}Km/l <br>`);
+
+
+        // FUNÇÕES: existem funções sem parametros e com parametros
+        function pulaLinha() {
+            document.write("<br/><br/>")
+        }
+        // Quando chemamos uma função com paramentros sem passar o parametro, vai retornar undefined
+        function mostraTexto(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var ano = 2022;
+        var nascimentoFlavio = 1977;
+        var nascimentoLucas = 1998;
+        var nascimentoJoaquim = 1985;
+
+        mostraTexto(`Flávio tem ${ano - nascimentoFlavio} anos`);
+        mostraTexto(`Lucas tem ${ano - nascimentoLucas} anos`);
+        mostraTexto(`Joaquim tem ${ano - nascimentoJoaquim} anos`);
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var quantidadeDeGeracoes = (ano - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostraTexto(`Desde 1500 até o ano atual, se passaram ${Math.round(quantidadeDeGeracoes)} gerações`);
+    </script>
+</body>
+
+</html>

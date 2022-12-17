@@ -1,0 +1,32 @@
+.card-video {
+    margin-bottom: 2rem;
+}
+.card-video__video{
+    position: relative;
+    width: 100%;
+    max-height: 18rem;
+    overflow: hidden;
+    margin-bottom: .5rem;
+}
+.card-video__video::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 4.875rem;
+    height: 4.875rem;
+    border-radius: 50%;
+    background-color: var(--branco);
+    background-repeat: no-repeat;
+    background-image: url("../../img/icones/play.svg");
+    background-size: 1.75rem;
+    background-position: center left 55%;
+}
+.card-video__titulo{
+    font-weight: var(--peso-destaque);
+    font-size: var(--tamanho-destaque);
+    color: var(--preto);
+    margin-bottom: 1rem;
+}

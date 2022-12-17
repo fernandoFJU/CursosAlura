@@ -1,0 +1,37 @@
+.populares{
+    padding: 3rem 0 0;
+}
+.populares__itens{
+    padding: 2rem 0;
+}
+.populares__conteudo{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: conteudo;
+    padding: 1rem 0;
+    justify-content: center;
+}
+.populares__cabecalho{
+    border-bottom: 1px solid #dcdcdc;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+.populares__titulo{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.populares__icone{
+    margin-right: .25rem;
+}
+.populares__botao{
+    background: transparent;
+    border: none;
+    border: var(--preto);
+    font-weight: 500;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,50 @@
+*{
+    scroll-behavior: smooth;
+}
+.hero{
+    background-image: url("../img/castelo.jpg");
+    min-height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+/* .hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+} */
+.hero__chamada{
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    z-index: 3;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.depoimentos__titulo {
+    background-color: #0275D8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:#FFF;
+}
+
+.footer{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+    .hero{
+        min-height: 60vh;
+    }
+}

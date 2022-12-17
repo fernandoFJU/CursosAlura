@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica JS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h3 class="titulo">Calculadora Simples JS</h3>
+        <div class="numeros">
+            <div class="box-numero">
+                <label for="primeiro-numero">Digite o primeiro valor:</label>
+                <input type="number" id="primeiro-numero">
+            </div>
+            <div class="box-numero">
+                <label for="segundo-numero">Digite o segundo valor:</label>
+                <input type="number" id="segundo-numero">
+            </div>
+            <div class="box-operacao">
+                <button class="operacao" id="adicao" disabled>+</button>
+                <button class="operacao" id="subtracao" disabled>-</button>
+                <button class="operacao" id="multiplicacao" disabled>x</button>
+                <button class="operacao" id="divisao" disabled>÷</button>
+            </div>
+            <!-- <button id="calcular" >Calcular</button> -->
+        </div>
+        <h3 id="resultado"></h3>
+    </div>  
+    
+    <script>
+        var primeiro_numero = document.getElementById("primeiro-numero").value;
+        var segundo_numero = document.getElementById("segundo-numero").value;
+        var botao_operacao = document.querySelectorAll(".operacao");
+        var texto_resultado = document.getElementById("resultado");
+
+
+        var adicao = botao_operacao[0].id;
+        var subtracao = botao_operacao[1].id;
+        var multiplicacao = botao_operacao[2].id;
+        var divisao = botao_operacao[3].id;
+
+
+        /*function somarNumero(primeiroNumero, segundoNumero){
+
+            var resultado = primeiroNumero + segundoNumero;
+
+            console.log(resultado);
+        }*/
+
+        botao_calcular.addEventListener("click", function(){
+            console.log(primeiro_numero);
+        });
+    </script>
+</body>
+
+</html>

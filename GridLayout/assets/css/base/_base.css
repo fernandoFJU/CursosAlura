@@ -1,0 +1,10 @@
+.app{
+    background-color: var(--cinza);
+    font-family: var(--familia-corpo);
+    font-size: var(--tamanho-corpo);
+    color: var(--preto);
+    display: grid;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 60px auto auto;
+}

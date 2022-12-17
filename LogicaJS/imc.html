@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    
+    <script>
+        function pulaLinha() {
+            document.write("<br/><br/>")
+        }
+
+        function mostraTexto(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function calculaIMC(peso, altura) {
+
+            var imc = peso / (altura * altura);
+
+            // return devolve o valor esperado para que possa ser usado em outro local,
+            // temos que ter cuidado, pos o que retona será fixo, se for uma soma, será sempre uma soma, se for uma string sempre será string
+            // o ideal é retornar sempre variavel
+            return imc;
+        }
+
+        var nome = prompt("Digite seu nome");
+        var alturaInformada = prompt(`${nome}, digite sua altura`);
+        var pesoInformado = prompt(`${nome}, digite seu peso`);
+        var imc = calculaIMC(pesoInformado, alturaInformada);
+
+        mostraTexto(`${nome}, seu IMC é ${Math.round(imc, -1)}`);
+
+        if (imc < 18.5) {
+            mostraTexto(`Seu IMC está abaixo do recomendado`);
+        } else if (imc > 18.5 && imc < 35) {
+            mostraTexto(`Seu IMC está normal`);
+        }else if (imc > 35) {
+            mostraTexto(`Seu IMC está muito acima do recomendado`);
+        }
+    </script>
+</body>
+
+</html>
