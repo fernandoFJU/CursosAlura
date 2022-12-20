@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programa com JS</title>
+</head>
+<body>
+    <h2>Acerte o meio do alvo!</h2>
+    <canvas width="600" height="400"></canvas>
+    
+    <script>
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+        pincel.fillStyle = 'lightgray';
+        pincel.fillRect(0, 0, 600, 400);
+
+        var raio = 10;
+        var xAleatorio;
+        var yAleatorio;
+
+        function desenhaCirculo(x, y, raio, cor) {
+
+            pincel.fillStyle = cor;
+            pincel.beginPath();
+            pincel.arc(x, y, raio, 0, 2 * Math.PI);
+            pincel.fill();
+
+        }
+
+        function limpaTela() {
+
+            pincel.clearRect(0, 0, 600, 400);
+        }
+
+        function desenhaAlvo(posX, posY, raio){
+            desenhaCirculo(posX, posY, raio + 20, "red");
+            desenhaCirculo(posX, posY, raio + 10, "white");
+            desenhaCirculo(posX, posY, raio, "red");
+        }
+
+        function sorteiaPosicao(maximo) {
+            return Math.floor(Math.random() * maximo);
+        }
+
+        function atualizaAlvo() {
+            xAleatorio = sorteiaPosicao(600);
+            yAleatorio = sorteiaPosicao(400);
+            limpaTela();
+            
+            desenhaAlvo(xAleatorio, yAleatorio, 10);
+        }
+        function dispara(evento) {
+
+            var posX = evento.pageX - tela.offsetLeft;
+            var posY = evento.pageY - tela.offsetTop;
+
+            if((posX > xAleatorio - raio) && (posX < xAleatorio + raio) && (posY > yAleatorio - raio) && (posY < yAleatorio + raio)){
+                alert("acertou");
+            }
+
+        }        
+
+        setInterval(atualizaAlvo, 1000);
+
+        tela.onclick = dispara;
+
+    </script>
+</body>
+
+</html>
