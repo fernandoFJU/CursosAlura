@@ -141,3 +141,38 @@ tr.invalido{
 	list-style: none;
 	margin-bottom: 5px;
 }
+
+.fadeOut{
+	opacity: 0;
+	transition: .5s linear;
+}
+
+
+section h3{
+	font-size: 2em;
+	display: block;
+	margin-bottom: .5em;
+}
+#filtrar-tabela{
+    height: 35px;
+    padding: 8px 15px;
+    outline: none;
+    border: 1px solid #dddddd;
+    font-size: 17px;
+	margin-bottom: 20px;
+}
+button{
+    height: 35px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dddddd;
+    flex: 1;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.invisivel{
+	display: none;
+	transition: .2s linear;
+}

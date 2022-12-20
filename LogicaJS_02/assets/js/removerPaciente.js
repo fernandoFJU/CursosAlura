@@ -12,10 +12,15 @@ var pacientes = document.querySelectorAll(".paciente");
 var tabela_pacientes = document.querySelector("table");
 
 tabela_pacientes.addEventListener("dblclick", function(evento){
+    
     var evento_alvo = evento.target;
     var evento_alvo_pai = evento_alvo.parentNode;
 
-    evento_alvo_pai.remove();
+    evento_alvo_pai.classList.add("fadeOut");
+
+    setTimeout(function() {
+        evento_alvo_pai.remove();
+    }, 500);
 });
 
 /*pacientes.forEach(function(paciente){
