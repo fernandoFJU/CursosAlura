@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalhando com Arrays em JS</title>
+</head>
+<body>
+    <script>
+
+        // Arrays servem para armazenar informações em listas;
+        // para criar um array utilizamos colchetes [], e dentro deles, posteriomente adicionamos os dados
+        // arrays tambem facilitam a utilização dos laços de repetição
+
+        //existem muitos métodos para utilizarmos em arrays:
+
+        /********CONCAT()*******/
+        //O método concat() é usado para concatenar valores e retornar um array com esses valores.
+        /*
+        var a = [1, 2, 3];
+        var b = [4, 5, 6];
+
+        var numeros = a.concat(b);
+        console.log(`Novo array criado ${numeros}`);
+        */
+
+        /********FILTER()*******/
+        //O método filter() usado para criar um novo array com elementos que foram filtrados pela função de teste provida.
+        /*
+        var listaNumeros = [1, 2, 3, 9, 15, 18, 20];
+
+        var numerosFiltrados = listaNumeros.filter(filtraNumeros);
+        function filtraNumeros(valor){
+            return valor >= 10;
+        }
+        console.log(`Numeros que passaram no filtro e são maior que 10 ${numerosFiltrados}`);
+        */
+
+        /********FIND()*******/
+        //O método find() é usado para encontrar UM valor no array por meio de uma função callback que fará o teste em cada elemento até encontrar o PRIMEIRO ou retornará undefined se não existir o que está procurando.
+        /*
+        var listaNumeros = [1, 2, 3, 9, 15, 18, 20];
+
+        var numerosFiltrados = listaNumeros.find(filtraNumeros);
+        function filtraNumeros(valor){
+            return valor >= 10;
+        }
+        console.log(`Numero retornado pela função de filtro ${numerosFiltrados}`);
+        */
+
+        /********FINDINDEX()*******/
+        //O método findIndex() é usado procurar o Índice de UM elemento no array e para fazer isso você passará uma função de callback que terá a condição para filtrar o elemento desejado. Caso não exista será retornado -1.
+        /*
+        var listaNumeros = [1, 2, 3, 9, 15, 18, 20];
+
+        var indexNumero = listaNumeros.findIndex(filtraNumeros);
+        function filtraNumeros(valor){
+            return valor === 15;
+        }
+        console.log(`O Index do numero retornado pela função de filtro ${indexNumero}`);
+        */
+
+        /********FOREACH()*******/
+        //O método forEach() é usado para executar uma dada função para cada elemento de um array, o seu retorno sempre será undefined. (Substitui na lógica o laço For)
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+
+        numeros.forEach(function(numero, index){
+            console.log(`Index: ${index} Numero ${numero}`);
+        });
+        */
+
+        /********INCLUDES()*******/
+        //O método includes() é usado para verificar se existe um determinado valor no array, sem a utilização de for e if.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+
+        numeros.forEach(function(numero, index){
+            console.log(`Index: ${index} Numero ${numero}`);
+        });
+        */
+        
+        
+
+    </script>
+</body>
+
+</html>
