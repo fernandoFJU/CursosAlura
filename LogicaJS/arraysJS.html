@@ -75,14 +75,132 @@
         //O método includes() é usado para verificar se existe um determinado valor no array, sem a utilização de for e if.
         /*
         var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var verifica = numeros.includes(9);
 
-        numeros.forEach(function(numero, index){
-            console.log(`Index: ${index} Numero ${numero}`);
-        });
+        console.log(`Existe no array o numero 9? ${verifica}`);       
         */
-        
-        
 
+        /********INDEXOF()*******/
+        //O método indexOf() usado para quando queremos obter o índice de determinado elemento no array, caso não exista no array será retornado -1 indicando que o elemento não existe no array.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var verifica = numeros.indexOf(15);
+
+        console.log(`O numero 15 está no index ${verifica}`);       
+        */
+
+        /********MAP()*******/
+        //O método map() usado para criar um novo array a partir de outro array, para isso é executada uma função passada por callback para cada elemento do array e essa função deve retornar um valor que será adicionado ao novo array.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var numerosDobrados = numeros.map(dobraNumeros);
+
+        function dobraNumeros(elemento){
+            return elemento * 2;
+        }
+
+        console.log(`Numeros ${numeros}`); 
+        console.log(`Numeros Dobrados ${numerosDobrados}`);      
+        */
+
+        /********POP()*******/
+        //O método pop() usado para remover o último elemento do array e pegar o valor removido ou simplesmente remover o último elemento do array.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var numeroRemovido = numeros.pop();
+
+        console.log(`Todos os numeros ${numeros}`);    
+        console.log(`Ultimo elemento removido ${numeroRemovido}`);    
+        */
+
+        /********Push()*******/
+        //O método push() usado para adicionar um ou mais elemento ao final do array. Esta função retorna o valor da propriedade length do objeto no qual o método foi chamado.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var totalNumeros = numeros.push(30, 40);
+
+        console.log(`Todos os numeros ${numeros}`);    
+        console.log(`Novo tamanho do array ${totalNumeros}`);    
+        */
+
+        /********SHIFT()*******/
+        //O método shift() usado para remover o primeiro elemento do array e pegar o valor removido ou simplesmente remover o primeiro elemento do array.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var NumeroRemovido = numeros.shift();
+
+        console.log(`Todos os numeros ${numeros}`);    
+        console.log(`Novo tamanho do array ${NumeroRemovido}`);    
+        */
+
+        /********SLICE()*******/
+        //O método slice() usado para fazer uma cópia de parte de um array.
+        /*
+        var frutas = ["Uva", "Maçã", "Laranja", "Limão", "Abacaxi"];
+        //LÊ-SE:                DE, ATÉ
+        var citrus = frutas.slice(2, 4);
+
+        console.log(`Todos as frutas ${frutas}`);    
+        console.log(`Frutas cítricas ${citrus}`);    
+        */
+
+        /********SORT()*******/
+        //O método slice() O método sort() usado para ordenar listas, como listas crescente e decrescente. (Por padrão ordena pela tabela ascii)
+        /*
+        var frutas = ["Uva", "Maçã", "Laranja", "Limão", "Abacaxi"];
+        //var frutasOrdenadoCrescente = frutas.sort(); padrão
+
+        var frutasOrdenadoCrescente = frutas.sort(function(a, b){
+            if (a > b) {
+                //ordena de forma crescente
+                return 1;
+            }
+        });
+
+        console.log(`Array Ordenado de forma Crescente ${frutasOrdenadoCrescente}`); 
+
+        var frutasOrdenadoDecrescente = frutas.sort(function(a, b){
+            if (a < b) {
+                //ordena de forma decrescente
+                return -1;
+            }
+        });
+            
+        console.log(`Array Ordenado de forma Decrescente ${frutasOrdenadoDecrescente}`);    
+        */
+
+        /********SPLICE()*******/
+        //O método splice() usado para remover uma sequência de  valores do array, dado pelo início e/ou fim, podendo também adicionar valores após a remoção dos valores.
+        /*
+        var nomes = ["Fernando", "João", "Maria", "Julia", "Marcelo"];
+        
+        var nomeRemovido = nomes.splice(2, 1, "Tiago", "Marcos");
+
+        console.log(`Todos os nomes ${nomes}`);    
+        console.log(`Nome removido ${nomeRemovido}`);    
+        */
+
+        /********UNSHIFT()*******/
+        //O método unshift() usado para adicionar valores ao início de um array e retornar o novo comprimento desse array ou simplesmente adicionar valores ao início de um array.
+        /*
+        var numeros = [1, 2, 3, 9, 15, 18, 20];
+        var qtdElementos = numeros.unshift(-1, 0);
+
+        console.log(`Todos os numeros ${numeros}`);    
+        console.log(`Novo tamanho do array ${qtdElementos}`);    
+        */
+
+        /********REVERSE()*******/
+        //O método reverse() usado para literalmente reverter a ordem dos elementos no array.
+        /*
+        var numeros = [2, 3, 9, 15, 18, 20];
+        
+        console.log(`Todos os numeros ${numeros}`); 
+
+        var numerosInvertidos = numeros.reverse();
+
+        console.log(`Array invertido ${numerosInvertidos}`);    
+        */
     </script>
 </body>
 
