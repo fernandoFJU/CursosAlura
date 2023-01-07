@@ -1,0 +1,13 @@
+:root{
+    --bg-corpo: #1D232A;
+    --bg-cabecalho: rgba(0, 0, 0, 0.16);
+    --bg-cabecalho-mobile: #15191C;
+    --bg-menu-lateral: #15191C;
+    --bg-cartao: #2C343A;
+    --cor-fonte: #FFFFFF;
+    --cor-fonte-alternativa: #95999C;
+    --cor-links: #0480DC;
+    --cor-botao: #0480DC;
+    --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    --fonte-principal: "Open Sans", sans-serif;
+}

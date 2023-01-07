@@ -1,0 +1,21 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-cabecalho);
+    box-shadow: var(--sombras);
+    padding: .5rem 1rem;
+}
+.cabecalho__menu i::before{
+    content: "\e904";
+    font-family: "icones";
+    font-size: 30px;
+}
+.cabecalho__notificacao i::before{
+    content: "\e906";
+    font-family: "icones";
+    font-size: 30px;
+}
+.cabecalho__logo{
+    width: 40px;
+}

@@ -1,0 +1,16 @@
+@import url("./reset.css");
+@import url("./variaveis.css");
+@import url("././componentes/header.css");
+@import url("././componentes/menu-lateral.css");
+
+
+@font-face {
+    font-family: 'icones';
+    src: url(../../assets/font/icones.ttf);
+}
+
+body{
+    background-color: var(--bg-corpo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte);
+}
