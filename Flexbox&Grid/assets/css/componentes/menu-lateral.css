@@ -69,3 +69,12 @@
 .menu-lateral__link--ativo::before{
     left: calc(1rem - 8px) ;
 }
+
+@media screen and (min-width: 1440px) {
+    .menu-lateral{
+        position: static;
+        width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+}

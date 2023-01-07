@@ -2,6 +2,9 @@
 @import url("./variaveis.css");
 @import url("././componentes/header.css");
 @import url("././componentes/menu-lateral.css");
+@import url("././componentes/cartao.css");
+@import url("././componentes/secao.css");
+
 
 
 @font-face {
@@ -13,4 +16,36 @@ body{
     background-color: var(--bg-corpo);
     font-family: var(--fonte-principal);
     color: var(--cor-fonte);
+}
+
+.conteudo{
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 1rem;
+}
+.titulo-pagina{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+    .conteudo{
+        padding: 1rem 4rem;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "destaque-video destaque-video videos-recentes"
+            "secao-videos secao-videos secao-videos"
+            "produtos-recentes destaque-produto destaque-produto"
+            "secao-produtos secao-produtos secao-produtos"
+        ;
+        column-gap: 2rem;
+        grid-column: 2;
+    }
 }

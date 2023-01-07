@@ -11,6 +11,9 @@
     font-family: "icones";
     font-size: 30px;
 }
+.cabecalho__perfil{
+    display: none;
+}
 .cabecalho__notificacao i::before{
     content: "\e906";
     font-family: "icones";
@@ -18,4 +21,44 @@
 }
 .cabecalho__logo{
     width: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho{
+        display: grid;
+        background-color: var(--bg-corpo);
+        grid-template-columns: 1fr auto;
+        padding: 1rem 4rem;
+        column-gap: 2rem;
+        grid-column: 2;
+    }
+    .cabecalho__menu, .cabecalho__logo{
+        display: none;
+    }
+    .cabecalho__perfil{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: .8rem;
+        align-items: center;
+        justify-self: flex-end;
+        user-select: none;
+        border-right: 1px solid var(--cor-fonte-alternativa);
+        padding: .5rem 2rem;
+        cursor: pointer;
+    }
+    .perfil__imagem{
+        width: 32px;
+    }
+    .perfil__nome{
+        color: var(--cor-fonte-alternativa);
+        display: flex;
+        align-items: center;
+    }
+    .perfil__nome::after{
+        font-family: "icones";
+        content: "\e90d";
+        font-size: 24px;
+        margin-left: .5rem;
+        color: var(--branco);
+    }
 }

@@ -1,0 +1,25 @@
+.secao{
+    display: grid;
+    gap: 1rem;
+}
+.secao__titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .secao{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .secao__titulo{
+        grid-column: span 4;
+    }
+    .secao-videos{
+        grid-area: secao-videos;
+    }
+    .secao-produtos{
+        grid-area: secao-produtos;
+    }
+}
