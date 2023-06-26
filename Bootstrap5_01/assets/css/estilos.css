@@ -1,0 +1,52 @@
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar #modo{
+  border: 2px solid var(--marrom-claro);
+  box-shadow: none;
+}
+.navbar #modo:checked {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+.banner{
+  padding-block: 30vh;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.banner-1{
+  background-image: url("../images/banner-1.png");
+}
+.banner-2{
+  background-image: url("../images/banner-2.png");
+}
+.banner-3{
+  background-image: url("../images/banner-3.png");
+  padding-block: 10vh;
+}
+
+.banner-legenda{
+  background-color: rgba(255, 247, 233, .3);
+}
+.banner-titulo{
+  font-weight: bold;
+  font-size: 3rem;
+  color: #000000;
+}
+.banner-titulo-secundario{
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000;
+}
+.banner-texto{
+  font-size: 1.2rem;
+  color: #000000;
+}

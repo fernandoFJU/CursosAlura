@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+	<title>Serenatto</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="./assets/css/estilos.css" />
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/images/logo.png" alt="Logo da Cafeteria Serenato">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<img src="./assets/images/logo-mobile.png" alt="Logo da Cafeteria Serenato">
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-lg-center">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Início</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sobre</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#" role="button">Contato</a>
+							</li>
+							<li class="nav-item">
+								<div class="form-check form-switch d-flex align-items-center">
+									<input class="form-check-input" type="checkbox" role="switch" id="modo">
+									<label class="form-check-label" for="modo">Modo Noturno</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="banner banner-1">
+			<div class="banner-legenda py-5">
+				<h1 class="banner-titulo text-center">Sua pausa para desfrutar a vida. </h1>
+				<p class="banner-texto text-center mb-0">Boas-vindas ao & Bistrô Serenatto! Um ambiente aconchegante e
+					acolhedor para apreciar um bom café.</p>
+			</div>
+		</section>
+
+		<section class="servicos py-5 ">
+			<h2 class="section-titulo text-center fw-bold text-black mb-4">Nossos Serviços</h2>
+
+			<div class="container justify-content-around d-flex flex-wrap">
+				<div class="card mx-2" style="width: 20rem;">
+					<img src="./assets/images/cafe-card.png" alt="Café & Bistrô">
+					<div class="card-body">
+						<h5 class="card-title">Café & Bistrô</h5>
+						<p class="card-text">Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos salgados e sobremesas. Uma excelente opção para quem busca um lugar tranquilo e aconchegante.</p>
+						<a href="#" class="btn w-100 btn-primary">Quero detalhes</a>
+					</div>
+				</div>
+				<div class="card mx-2" style="width: 20rem;">
+					<img src="./assets/images/buffet-card.png" alt="Buffet">
+					<div class="card-body">
+						<h5 class="card-title">Buffet</h5>
+						<p class="card-text">Buffet e catering personalizado para eventos, produções e celebrações. Com um menu variado e adaptável às preferências do cliente, atendimento atencioso e profissional.</p>
+						<a href="#" class="btn w-100 btn-primary">Quero detalhes</a>
+					</div>
+				</div>
+				<div class="card mx-2" style="width: 20rem;">
+					<img src="./assets/images/delivery-card.png" alt="Delivery">
+					<div class="card-body">
+						<h5 class="card-title">Delivery</h5>
+						<p class="card-text">Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos produtos. Com o mesmo cardápio variado de sempre, sem perder nosso sabor e padrão de qualidade.</p>
+						<a href="#" class="btn w-100 btn-primary">Quero detalhes</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="banner banner-2">
+			<div class="banner-legenda py-5">
+				<h3 class="banner-titulo-secundario text-center">Portas abertas para todos os públicos.</h3>
+				<p class="banner-texto text-center mb-0">Nosso espaço é aconchegante, pet friendly, preparado para receber crianças e pessoas com deficiência. Também oferecemos ambiente de coworking!</p>
+			</div>
+		</section>
+
+		<section class="container produtos py-5">
+			<h2 class="section-titulo text-center fw-bold text-black mb-4">Nossos Produtos</h2>
+			<div class="row">
+				<div class="col-sm-4 mb-3 mb-sm-0">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Special title treatment</h5>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Special title treatment</h5>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Special title treatment</h5>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="banner banner-3">
+			<!-- <div class="banner-legenda py-5">
+				<h3 class="banner-titulo-secundario text-center">Portas abertas para todos os públicos.</h3>
+				<p class="banner-texto text-center mb-0">Nosso espaço é aconchegante, pet friendly, preparado para receber crianças e pessoas com deficiência. Também oferecemos ambiente de coworking!</p>
+			</div> -->
+		</section>
+	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
